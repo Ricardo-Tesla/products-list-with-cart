@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let cart = [];
 
     const mealThumbnails = {
-        "Waffle": "images/image-waffle-thumbnail.jpg",
-        "Crème Brûlée": "images/image-creme-brulee-thumbnail.jpg",
-        "Macaron": "images/image-macaron-thumbnail.jpg",
-        "Tiramisu": "images/image-tiramisu-thumbnail.jpg",
-        "Baklava": "images/image-baklava-thumbnail.jpg",
-        "Pie": "images/image-meringue-thumbnail.jpg",
-        "Cake": "images/image-cake-thumbnail.jpg",
-        "Brownie": "images/image-brownie-thumbnail.jpg",
-        "Panna Cotta": "images/image-panna-cotta-thumbnail.jpg"
+        "Waffle": ".images/image-waffle-thumbnail.jpg",
+        "Crème Brûlée": ".images/image-creme-brulee-thumbnail.jpg",
+        "Macaron": ".images/image-macaron-thumbnail.jpg",
+        "Tiramisu": ".images/image-tiramisu-thumbnail.jpg",
+        "Baklava": ".images/image-baklava-thumbnail.jpg",
+        "Pie": ".images/image-meringue-thumbnail.jpg",
+        "Cake": ".images/image-cake-thumbnail.jpg",
+        "Brownie": ".images/image-brownie-thumbnail.jpg",
+        "Panna Cotta": ".images/image-panna-cotta-thumbnail.jpg"
     };
 
     // Initialize product cards
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (cart.length === 0) {
             cartElement.innerHTML = `
                 <h1>Your Cart(0)</h1>
-                <img src="/images/illustration-empty-cart.svg" alt="empty cart">
+                <img src="./images/illustration-empty-cart.svg" alt="empty cart">
                 <p class="added-items">Your added items will appear here</p>
             `;
         } else {
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span class="item-price">$${item.product.price.toFixed(2)}</span> 
                             <span class="item-total">$${itemTotal.toFixed(2)}</span>
                             <button class="remove-item" data-meal="${item.product.meal}">
-                                <img src="/images/icon-remove-item.svg" alt="remove">
+                                <img src="./images/icon-remove-item.svg" alt="remove">
                             </button>
                         </p>
                     </div>
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>Order Total:<strong class="orders-total">$${total.toFixed(2)}</strong></p>
 
                 <div class="delivery">
-                    <img src="/images/icon-carbon-neutral.svg" alt="delivery">
+                    <img src="./images/icon-carbon-neutral.svg" alt="delivery">
                     <p>This is a carbon-neutral delivery</p>
                 </div>
                 <button id="confirm-order">Confirm Order</button>
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
             addButton.classList.remove("active");
             addButton.innerHTML = `
                 <button class="add-cart-btn">
-                    <img src="/images/icon-add-to-cart.svg" alt="add-icon"> Add to Cart
+                    <img src="./images/icon-add-to-cart.svg" alt="add-icon"> Add to Cart
                 </button>
             `;
         });
