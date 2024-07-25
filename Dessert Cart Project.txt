@@ -1,0 +1,36 @@
+Dessert Cart Project
+
+Overview
+This project showcases a dynamic dessert cart feature where users can view various desserts, add them to their cart, adjust quantities, and confirm their order. The application provides a responsive design for different devices and includes a confirmation modal upon order completion.
+
+Features
+Dessert Listings: Display a grid of desserts with images, descriptions, and prices.
+Add to Cart: Users can add desserts to the cart with adjustable quantities.
+Cart Management: View, update, and remove items in the cart.
+Order Confirmation: A modal summarizing the order details appears upon confirming the order.
+
+
+Getting Started
+
+Clone the Repository:
+
+
+git clone https://github.com/Ricardo-Tesla/Product-with-cart
+
+
+Open index.html in a Web Browser.
+
+Ensure all necessary images are available in the /image directory.
+
+Technologies Used
+HTML5
+CSS3
+JavaScript
+CSS Styling
+Responsive grid layout for desserts.
+Dynamic cart updates and order confirmation modal.
+Contributing
+Feel free to fork the repository and submit pull requests for improvements or bug fixes.
+
+License
+This project is licensed under the MIT License.

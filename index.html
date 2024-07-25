@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product with Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <h1>Desserts</h1>
+    <main>
+
+        <div class="image-container">
+            <div class="image-card" data-meal="Waffle" data-description="Waffle with Berries" data-price="6.50">
+                <div class="meal-image">
+                    <img src="/images/image-waffle-desktop.jpg" alt="waffle">
+                    <div class="add-btn">
+                        <button type="button" class="add-cart-btn">
+                            <img src="/images/icon-add-to-cart.svg" alt="add-icon"> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <p class="meal">Waffle</p>
+                <p class="description">Waffle with Berries</p>
+                <p class="price">$6.50</p>
+            </div>
+            <div class="image-card" data-meal="Crème Brûlée" data-description="Vanilla Bean Crème Brûlée"
+                data-price="$7.00">
+                <div class="meal-image">
+                    <img src="/images/image-creme-brulee-desktop.jpg" alt="creme">
+                    <div class="add-btn">
+                        <button type="button" class="add-cart-btn">
+                            <img src="/images/icon-add-to-cart.svg" alt="add-icon">Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <p class="meal">Crème Brûlée</p>
+                <p class="description">Vanilla Bean Crème Brûlée</p>
+                <p class="price">$7.00</p>
+            </div>
+            <div class="image-card" data-meal="Macaron" data-description="Macaron Mix of Five" data-price="8.00">
+                <div class="meal-image">
+                    <img src="/images/image-macaron-desktop.jpg" alt="macaron">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Macaron</p>
+                <p class="description">Macaron Mix of Five</p>
+                <p class="price">$8.00</p>
+            </div>
+            <div class="image-card" data-meal="Tiramisu" data-description="Classic Tiramisu" data-price="5.50">
+                <div class="meal-image">
+                    <img src="/images/image-tiramisu-desktop.jpg" alt="Tiramisu">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Tiramisu</p>
+                <p class="description">Classic Tiramisu</p>
+                <p class="price">$5.50</p>
+            </div>
+            <div class="image-card" data-meal="Baklava" data-description="Pistachio Baklava" data-price="4.00">
+                <div class="meal-image">
+                    <img src="/images/image-baklava-desktop.jpg" alt="baklava">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Baklava</p>
+                <p class="description">Pistachio Baklava</p>
+                <p class="price">$4.00</p>
+            </div>
+            <div class="image-card" data-meal="Pie" data-description="Lemon Meringue Pie" data-price="5.00">
+                <div class="meal-image">
+                    <img src="/images/image-meringue-desktop.jpg" alt="pie">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Pie</p>
+                <p class="description">Lemon Meringue Pie</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="image-card" data-meal="Cake" data-description="Red Velvet Cake" data-price="4.50">
+                <div class="meal-image">
+                    <img src="/images/image-cake-desktop.jpg" alt="cake">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Cake</p>
+                <p class="description">Red Velvet Cake</p>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="image-card" data-meal="Brownie" data-description="Salted Caramel Brownie" data-price="5.50">
+                <div class="meal-image">
+                    <img src="/images/image-brownie-desktop.jpg" alt="Brownie">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Brownie</p>
+                <p class="description">Salted Caramel Brownie</p>
+                <p class="price">$5.50</p>
+            </div>
+            <div class="image-card" data-meal="Panna Cotta" data-description="Vanilla Panna Cotta" data-price="6.50">
+                <div class="meal-image">
+                    <img src="/images/image-panna-cotta-desktop.jpg" alt="Panna">
+                    <div class="add-btn"><button type="button" class="add-cart-btn"><img
+                                src="/images/icon-add-to-cart.svg" alt="add-icon">Add
+                            to Cart</button></div>
+                </div>
+                <p class="meal">Panna Cotta</p>
+                <p class="description">Vanilla Panna Cotta</p>
+                <p class="price">$6.50</p>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h1>Your Cart(0)</h1>
+            <img class="empty-image" src="/images/illustration-empty-cart.svg" alt="added">
+            <p class="added-items">Your added items will appear here</p>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+    <!---------------------------------------------------Confirmed Order---------------------------------->
+
+
+   
+    <div id="orderConfirmationModal" style="display: none;">
+        <div class="prompt-order-confirmed">
+            <img src="/images/icon-order-confirmed.svg" alt="confirmed">
+            <h2>Order Confirmed</h2>
+            <p>We hope you enjoy your food!</p>
+            <div class="confirmed-meals" id="orderSummary">
+                
+            </div>
+            <button class="new-order-btn" id="startNewOrder" type="button">Start New Order</button>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

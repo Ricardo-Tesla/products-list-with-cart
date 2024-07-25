@@ -1,0 +1,272 @@
+body {
+    background-color: hsl(13, 31%, 94%);
+    margin-top: 50px;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    margin-left: 50px;
+    color: hsl(14, 65%, 9%);
+}
+
+main {
+    display: flex;
+    align-self: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.meal-image {
+    position: relative;
+    display: inline-block;
+}
+
+.meal-image img {
+    display: block;
+    width: 260px;
+    border-radius: 20px;
+}
+.meal{
+    color: hsl(12, 20%, 44%);
+    font-size: 14px;
+}
+.description{
+    font-weight: bold;
+}
+
+.price{
+    color: hsl(14, 86%, 42%);
+}
+
+.add-btn {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.add-cart-btn {
+    padding: 5px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(14, 65%, 9%);
+    border-radius: 20px;
+    background-color: white;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.add-cart-btn:hover {
+    border-color: hsl(14, 86%, 42%);
+    color: hsl(14, 86%, 42%);
+}
+
+.quantity-container {
+    display: flex;
+
+}
+
+.quantity-container input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+}
+
+.quantity-container button {
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.quantity-container .minus-btn {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.quantity-container .plus-btn {
+    border-radius: 0 50px 50px 0;
+}
+
+.add-btn button img {
+    margin-right: 5px;
+    width: 30px;
+}
+
+.cart h1 {
+    margin-left: 10px;
+    color: hsl(14, 86%, 42%);
+}
+
+.empty-image {
+    margin-left: 100px;
+}
+
+.added-items {
+    text-align: center;
+    color: hsl(12, 20%, 44%);
+}
+
+/*---------------Cart-Loading-------------------------*/
+
+.cart {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -70px;
+    width: 100%;
+    height: 100%;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.cart-item {
+    margin-bottom: 50px;
+}
+.item-quantity{
+    color: hsl(14, 86%, 42%);
+}
+.item-price{
+    color: hsl(14, 25%, 72%);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.item-total{
+    color: hsl(12, 20%, 44%);
+}
+.orders-total{
+    margin-left: 240px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.meals-details button {
+    margin-left: 360px;
+    display: flex;
+    margin-top: -40px;
+    padding: 2px 2px;
+}
+
+.remove-item {
+    border-radius: 100%;
+    padding: 0;
+    margin-left: 0px;
+    background-color: white;
+    border: 1px solid hsl(14, 25%, 72%);
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    border: 1px solid black;
+}
+
+.remove-item img {
+    padding: 0px;
+}
+
+.delivery {
+    display: flex;
+    gap: 10px;
+    background-color: hsl(13, 31%, 94%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.delivery img {
+    padding-left: 50px;
+}
+
+#confirm-order {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*----------------------Confirmed Order-----------------------*/
+
+.prompt-order-confirmed {
+    background-color: white;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.confirmed-meals {
+    background-color: hsl(13, 31%, 94%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.meal-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.meal-details img {
+    width: 50px;
+}
+
+.price-confirmed {
+    margin-left: 10px;
+}
+
+#total {
+    margin-left: 180px;
+}
+
+#order-total {
+    margin-left: 250px;
+}
+
+.prompt-order-confirmed button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#orderConfirmationModal {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
